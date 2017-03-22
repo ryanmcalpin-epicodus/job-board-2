@@ -1,8 +1,9 @@
 public class City {
-  private JobOpening mJob;
+  private String mName;
 
-  public City(JobOpening jobOpening) {
-    mJob = jobOpening;
+  public City(String name) {
+    mName = name;
   }
+
 
 }

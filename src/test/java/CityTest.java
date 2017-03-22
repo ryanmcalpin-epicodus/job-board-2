@@ -2,10 +2,11 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class CityTest {
+
   @Test
-  public void newCity_instantiatesCorrectly() {
-    JobOpening testJobOpening = new JobOpening("Chulo Co", "Developer", "make techy stuff", "chulo@chuloco");
-    City testCity = new City(testJobOpening);
+  public void city_instantiatesCorrectly_true() {
+    City testCity = new City("Saskatoon");
     assertEquals(true, testCity instanceof City);
   }
+
 }
