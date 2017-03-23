@@ -1,0 +1,27 @@
+<h1>Add a Job in $city.getName()</h1>
+
+<form action="/jobs" method="post">
+
+  <input type="hidden" name="cityId" value="$city.getId()" id="cityId">
+  <div class="form-group">
+  <label for="name">Company Name</label>
+  <input id="name" name="name" type="text">
+  </div>
+
+  <div class="form-group">
+  <label for="title">Job Title</label>
+  <input id="title" name="title" type="text">
+  </div>
+
+  <div class="form-group">
+  <label for="description">Job Description</label>
+  <input id="description" name="description" type="text">
+  </div>
+
+  <div class="form-group">
+  <label for="contactInfo">Contact Information</label>
+  <input id="contactInfo" name="contactInfo" type="text">
+  </div>
+
+  <button type="submit" class="btn btn-warning btn-lg">Add Job</button>
+</form>

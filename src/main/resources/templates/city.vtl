@@ -1,0 +1,15 @@
+<h1>$city.getName()</h1>
+
+  <ul>
+    #foreach ($job in $city.getJobs())
+    <li><a href="/cities/$city.getId()/jobs/$job.getId()">$job.getTitle()</a> at $job.getName()
+      <ul>
+        <li>$job.getDescription()</li>
+        <li>$job.getContactInfo()</li><br>
+      </ul>
+    </li>
+    #end
+  </ul>
+
+<a href="/cities/$city.getId()/jobs/new">Add a Job in $city.getName()</a>
+<a href="/cities">All Cities</a>

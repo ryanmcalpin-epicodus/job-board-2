@@ -1,46 +1,6 @@
 <!--index.vtl-->
-#if ($jobs)
+<h1>Job Board</h1>
 
-  <ul>
-    #foreach ($job in $jobs)
-    <li>$job.getName()</li>
-    <li>$job.getTitle()</li>
-    <li>$job.getDescription()</li>
-    <li>$job.getContactInfo()</li><br>
-    #end
-  </ul>
-
-#else
-  <p>
-    No Jobs
-  </p>
-#end
-
-<p>
-  Add a Job
-</p>
-
-<form action="/jobs" method="post">
-  <div class="form-group">
-  <label for="name">Company Name</label>
-  <input id="name" name="name" type="text">
-  </div>
-
-  <div class="form-group">
-  <label for="title">Job Title</label>
-  <input id="title" name="title" type="text">
-  </div>
-
-  <div class="form-group">
-  <label for="description">Job Description</label>
-  <input id="description" name="description" type="text">
-  </div>
-
-  <div class="form-group">
-  <label for="contactInfo">Contact Information</label>
-  <input id="contactInfo" name="contactInfo" type="text">
-  </div>
-
-  <button type="submit" class="btn btn-warning btn-lg">JOBS</button>
-</form>
+<a href="/cities">View Cities</a>
+<a href="/cities/new">Add a City</a>
 <!--index.vtl-->
